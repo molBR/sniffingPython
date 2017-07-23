@@ -4,8 +4,8 @@ import os
 import sys
 
 #ip do host
-#host = "192.168.1.6"
-host = socket.getfqdn()
+host = "192.168.1.6"
+#host = socket.getfqdn()
 #para windows 
 if os.name =="nt":
 
@@ -13,7 +13,7 @@ if os.name =="nt":
 	socket_protocol = socket.IPPROTO_IP
 else:
 	#linux
-	socket_protocol = socket.IPPROTO_IPO_ICMP
+	socket_protocol = socket.IPPROTO_ICMP
 #IPPROTO_IP = Pegar pacotes IP direto;
 	#existem sockets para a camada de transporte TCP e UDP.
 
